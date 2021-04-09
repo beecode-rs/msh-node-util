@@ -92,7 +92,7 @@
     "semantic-release:check": "npm run semantic-release -- --dry-run --no-ci",
     "test": "npm run test:unit -- --forbid-only && npm run test:int -- --forbid-only",
     "test:int": "#mocha ./src/test/{**/,/}*.ts",
-    "test:unit": "mocha ./src/{**/,/}*.test.ts"
+    "test:unit": "TZ=utc mocha ./src/{**/,/}*.test.ts"
   },
   "typings": "./lib/index.d.ts",
   "version": "1.0.3"
